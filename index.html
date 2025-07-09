@@ -41,7 +41,7 @@
       </div>
       <div class="content">
         <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
-          Hey, I'm <span>Ludmilla Pajolec</span>
+          Hey, Je suis <span>Ludmilla Pajolec</span>
         </h1>
         <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
           I'm a <span class="typewriter-text"></span>
@@ -50,32 +50,91 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/ludmilla-pajolec/" aria-label="LinkedIn" title="LinkedIn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
-            <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/ludmilla-pajolec/"
+              title="Profil LinkedIn de Ludmilla Pajolec"
+              aria-label="Profil LinkedIn de Ludmilla Pajolec"
+              target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
           </a>
-          <a href="#" aria-label="GitHub" title="GitHub" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
-            <i class="fa-brands fa-github"></i>
+
+          <a href="https://github.com/Ludmilla06"
+              title="Profil GitHub de Ludmilla Pajolec"
+              aria-label="Profil GitHub de Ludmilla Pajolec"
+              target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
           </a>
+
         </div>
         <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-          <button>Contact Me</button>
-          <a href="#">Download CV</a>
+          <button onclick="window.location.href='mailto:ton@email.com'">Contactez-moi</button>
+          <a href="assets/CV_Ludmilla_Pajolec.pdf" download="CV_Ludmilla_Pajolec.pdf" class="download-cv"> Télécharger mon CV </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-container">
       <div class="about-content">
-        <h1>About Me</h1>
-        <p>I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and React. I'm always eager to learn new technologies and improve my skills.</p>
+        <h1>À propos de moi</h1>
+        <p>Je m'appelle Ludmilla Pajolec, développeuse web junior en reconversion professionnelle, je maîtrise les fondamentaux du développement web et web mobile, notamment HTML, CSS et JavaScript, acquis au cours de mes autoformations. Rigoureuse, curieuse et motivée, je suis déterminée à approfondir mes compétences techniques tout en contribuant activement à des projets concrets. Actuellement à la recherche d’un contrat en alternance, je suis prête à m’investir pleinement pour accompagner et faire évoluer vos développements web avec efficacité et qualité.
+        </p>     
       </div>
       <div class="about-image">
-        <img src="about.png" alt="Illustration développement web">
+        <img src="photocv.jpg" alt="Photo de Ludmilla Pajolec">
       </div>
     </div>
   </section>
+
+<section id="skills" class="skills">
+  <h2>Compétences</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <i class="fa-brands fa-html5" title="HTML5"></i>
+      <span>HTML5</span>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+      <span>CSS3</span>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-js" title="JavaScript"></i>
+      <span>JavaScript</span>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-git-alt" title="Git"></i>
+      <span>Git</span>
+    </div>
+    <div class="skill">
+      <i class="fa-brands fa-github" title="GitHub"></i>
+      <span>GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form action="mailto:ludmilla.pajolec@gmail.com" method="POST" target="_blank" enctype="text/plain" novalidate>
+    <label for="name">Name<span aria-hidden="true">*</span></label>
+    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name">
+
+    <label for="email">Email<span aria-hidden="true">*</span></label>
+    <input type="email" id="email" name="email" required aria-required="true" placeholder="Your email address">
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+
+    <label for="message">Message<span aria-hidden="true">*</span></label>
+    <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Write your message here"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<section id="projets">
+  <h2>Mes projets</h2>
+  <p>Les projets seront bientôt disponibles sur GitHub.</p>
+</section>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

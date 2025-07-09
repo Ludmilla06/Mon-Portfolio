@@ -54,3 +54,42 @@ window.onload = function () {
     link.addEventListener("click", cancel);
   });
 };
+
+// Validation du formulaire de contact
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (e) {
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!name || !email || !message) {
+      alert("Veuillez remplir tous les champs obligatoires.");
+      e.preventDefault();
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      alert("Veuillez entrer une adresse email valide.");
+      e.preventDefault();
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const skillsContainer = document.querySelector(".skills-container");
+
+  function checkSkillsVisibility() {
+    const rect = skillsContainer.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      skillsContainer.classList.add("animate");
+      window.removeEventListener("scroll", checkSkillsVisibility);
+    }
+  }
+
+  window.addEventListener("scroll", checkSkillsVisibility);
+  checkSkillsVisibility();
+});
+// Fonction pour afficher le message de succès  
