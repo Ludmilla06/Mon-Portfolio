@@ -1,145 +1,264 @@
 <!-- Forcer GitHub Pages à mettre à jour -->
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ludmilla Pajolec Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>  
-  <nav>
-    <div class="nav-container"> 
-      <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-        Ludmilla <span>Pajolec</span>
-      </div>
-      <div class="links"> 
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>  
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>  
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>  
-        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Contact</a></div>  
-      </div>
-      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-      <div class="dropdown">
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">My Project</a>
-          <a href="#">Contact</a>
-          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludmilla Pajolec Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>  
+    <nav>
+      <div class="nav-container"> 
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          <img src="monogramme 2.svg" alt="Logo">
         </div>
-      </div>
-    </div>
-  </nav> 
 
-  <section>
-    <div class="main-container">
-      <div class="image" data-aos="zoom-out" data-aos-duration="3000">     
-        <img src="photocv.jpg" alt="Portrait de Ludmilla Pajolec">
-      </div>
-      <div class="content">
-        <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
-          Hey, Je suis <span>Ludmilla Pajolec</span>
-        </h1>
-        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
-          I'm a <span class="typewriter-text"></span>
+        <div class="links"> 
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <a href="#accueil">Accueil</a>
+          </div>  
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <a href="#a-propos">À propos de moi</a>
+          </div>  
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <a href="#skills">Compétences</a>
+          </div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <a href="#projects">Projets</a>
+          </div>  
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <a href="#contact">Contact</a>
+          </div>  
         </div>
-        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/ludmilla-pajolec/"
-              title="Profil LinkedIn de Ludmilla Pajolec"
-              aria-label="Profil LinkedIn de Ludmilla Pajolec"
-              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-          </a>
 
-          <a href="https://github.com/Ludmilla06"
-              title="Profil GitHub de Ludmilla Pajolec"
-              aria-label="Profil GitHub de Ludmilla Pajolec"
-              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-          </a>
+        <i class="fa-solid fa-bars hamburg" aria-label="Ouvrir le menu"></i>
 
-        </div>
-        <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-          <button onclick="window.location.href='mailto:ton@email.com'">Contactez-moi</button>
-          <a href="assets/CV_Ludmilla_Pajolec.pdf" download="CV_Ludmilla_Pajolec.pdf" class="download-cv"> Télécharger mon CV </a>
+        <div class="dropdown">
+          <div class="links">
+            <a href="#accueil">Accueil</a>
+            <a href="#a-propos">À propos de moi</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+            <i class="fa-solid fa-xmark cancel" aria-label="Fermer le menu"></i>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
+
+
+    <section class="home" id="accueil">
+      <div class="main-container">
+        <div class="image" data-aos="zoom-out" data-aos-duration="3000">     
+          <img src="Memoji.svg" alt="Portrait de Ludmilla Pajolec">
+        </div>
+
+        <div class="content">
+          <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+            Hey, je m'appelle <span>Ludmilla Pajolec</span>
+          </h1>
+          
+          <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+            Je suis <span class="typewriter-text"></span>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ludmilla-pajolec/"
+                title="Profil LinkedIn de Ludmilla Pajolec"
+                aria-label="Profil LinkedIn de Ludmilla Pajolec"
+                target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/Ludmilla06"
+                title="Profil GitHub de Ludmilla Pajolec"
+                aria-label="Profil GitHub de Ludmilla Pajolec"
+                target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+
+          </div>
+          <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+            <a href="CV_Ludmilla_Pajolec.pdf" download="CV_Ludmilla_Pajolec.pdf" class="download-cv"> Télécharger mon CV </a>
+            <button onclick="location.href='#contact'">Contactez-moi</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="about" id="a-propos">
+      <div class="about-container">
+          <h1>À propos de moi</h1>
+          <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+              Ancienne spectatrice du web, j’ai choisi de passer de l’autre côté de l’écran. Je me forme activement au développement web et web mobile, en consolidant chaque jour mes acquis en HTML, CSS et JavaScript. Aujourd’hui en formation et à la recherche d’un contrat en alternance, je suis déterminée à transformer mes lignes de code en vrais projets.
+              
+              J’ai eu l’opportunité de découvrir le métier lors d’un stage d’immersion au sein de la squad WFI du Crédit Agricole Technologies & Services de Nantes. Cette expérience m’a confirmé que j’étais à ma place : apprendre vite, m’adapter, comprendre les enjeux techniques et humains d’un projet, et y contribuer à mon niveau.
+              
+              Chaque ligne de code est pour moi un défi à résoudre, un puzzle à assembler, un terrain de jeu où rigueur et créativité se rencontrent. Mon objectif : devenir développeuse full-stack, capable de concevoir des applications fiables, accessibles et maintenables.
+              
+              Côté vie perso, je roule à moto depuis cinq ans. La conduite m’a appris la rigueur, l’anticipation, la concentration. Un accident m’a obligée à faire une pause, mais pas à renoncer. Aujourd’hui, je suis debout, déterminée, et reconnue MDPH — ce qui implique simplement quelques ajustements légers en environnement de travail. Rien qui m’empêche d’avancer.
+              
+              Je suis aussi passionnée par la F1 : comme les pilotes, je veux connaître ma "machine" — ici, mon code — sur le bout des doigts, pour aller toujours plus vite, plus loin.
+              
+              Et avant tout ça ? Huit ans de handball. J’y ai appris que rien ne se gagne seul. Le collectif, c’est ce qui m’anime. En développement comme sur le terrain, c’est ensemble qu’on progresse.
+              
+              Aujourd’hui, je débute, mais je suis prête : prête à apprendre, à m’investir à 100 %, à intégrer une équipe, une entreprise, un vrai terrain d’entraînement. Vous apportez les projets, je ramène l’envie, l’énergie et un bon esprit d’équipe.
+              
+              Pourquoi moi ? Parce que je prends mon avenir au sérieux — sans me prendre au sérieux. Et parce que travailler avec moi, c’est comme un bon match : on rame un peu, on rigole beaucoup, et on va au bout ensemble.        </p>     
+        </div>
+      </div>
   </section>
 
-  <section class="about" id="about">
-    <div class="about-container">
-      <div class="about-content">
-        <h1>À propos de moi</h1>
-        <p>Je m'appelle Ludmilla Pajolec, développeuse web junior en reconversion professionnelle, je maîtrise les fondamentaux du développement web et web mobile, notamment HTML, CSS et JavaScript, acquis au cours de mes autoformations. Rigoureuse, curieuse et motivée, je suis déterminée à approfondir mes compétences techniques tout en contribuant activement à des projets concrets. Actuellement à la recherche d’un contrat en alternance, je suis prête à m’investir pleinement pour accompagner et faire évoluer vos développements web avec efficacité et qualité.
-        </p>     
+
+    <section class="competences-section" id="skills" >
+      <div class="competences-grid">
+        <div class="competence-card">
+          <h3>🧩 Ce que je maîtrise</h3>
+          <ul>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Design </li>
+            <li>Figma (lecture de maquettes)</li>
+          </ul>
+        </div>
+
+        <div class="competence-card">
+          <h3>🚧 En cours d’apprentissage</h3>
+          <ul>
+            <li>React (composants)</li>
+            <li>APIs REST (affichage)</li>
+            <li>Node.js / Express (bases)</li>
+            <li>Routing, gestion de state</li>
+            <li>Java</li>
+            <li>Java Spring Boot</li>
+          </ul>
+        </div>
+
+        <div class="competence-card">
+          <h3>🧠 Atouts personnels</h3>
+          <ul>
+            <li>Curiosité technique</li>
+            <li>Rigueur & sens du détail</li>
+            <li>Autonomie & adaptabilité</li>
+            <li>Esprit d’équipe & entraide</li>
+            <li>Capacité à apprendre vite</li>
+            <li>Compréhension rapide de systèmes complexes</li>
+            <li>Bonne capacité d’analyse et résolution de bugs</li>
+          </ul>
+        </div>
+
+        <div class="competence-card">
+          <h3>⚙️ Outils & méthodes</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Chrome DevTools</li>
+            <li>GitHub (projets collaboratifs)</li>
+            <li>N8N </li>
+            <li>API</li>
+            <li>Windows PowerShell</li>
+          </ul>
+        </div>
       </div>
-      <div class="about-image">
-        <img src="photocv.jpg" alt="Photo de Ludmilla Pajolec">
-      </div>
-    </div>
-  </section>
+    </section>
 
-<section id="skills" class="skills">
-  <h2>Compétences</h2>
-  <div class="skills-container">
-    <div class="skill">
-      <i class="fa-brands fa-html5" title="HTML5"></i>
-      <span>HTML5</span>
-    </div>
-    <div class="skill">
-      <i class="fa-brands fa-css3-alt" title="CSS3"></i>
-      <span>CSS3</span>
-    </div>
-    <div class="skill">
-      <i class="fa-brands fa-js" title="JavaScript"></i>
-      <span>JavaScript</span>
-    </div>
-    <div class="skill">
-      <i class="fa-brands fa-git-alt" title="Git"></i>
-      <span>Git</span>
-    </div>
-    <div class="skill">
-      <i class="fa-brands fa-github" title="GitHub"></i>
-      <span>GitHub</span>
-    </div>
-  </div>
-</section>
+    <section class="projects" id="projects">
+      <h1>Mes projets</h1>
+      <p>Voici quelques projets sur lesquels j'ai travaillé récemment. Ils sont en cours de développement et seront bientôt disponibles sur GitHub.</p>
 
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <form action="mailto:ludmilla.pajolec@gmail.com" method="POST" target="_blank" enctype="text/plain" novalidate>
-    <label for="name">Name<span aria-hidden="true">*</span></label>
-    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name">
+           
+        <div class="projects-container">         
+          <!-- Projet 1 -->
+          <div class="project-slide active">
+            <div class="slide-content">
+              <img src="workflow atelier n8n.png" alt="Api pour lecteur d'affiche">
+              <div class="text-content">
+                <h2>🧠 Lecture d’affiche – Atelier IA</h2>
+                <p><strong>Contexte :</strong> Crédit Agricole</p>
+                <p><strong>Objectif :</strong> Générer une alerte automatique à partir d'une affiche de tournoi de basket.</p>
+                <p><strong>Outils :</strong> N8N, API</p>
+                <p><strong>Rôle :</strong> Compréhension du besoin, conception de la logique, tests</p>
+              </div>
+            </div>
+          </div>
 
-    <label for="email">Email<span aria-hidden="true">*</span></label>
-    <input type="email" id="email" name="email" required aria-required="true" placeholder="Your email address">
+          <!-- Projet 2 -->
+          <div class="project-slide"> 
+            <div class="slide-content">
+              <!--<img src="img/projet2.png" alt="Simulation VR">-->
+              <div class="text-content">
+                <h2>🕶️ Simulation VR – ABMI</h2>
+                <p><strong>Contexte :</strong> Projet de réalité virtuelle appliqué à l’industrie</p>
+                <p><strong>Outils :</strong> Unity, logiciel de 3D</p>
+                <p><strong>Rôle :</strong> Observation, compréhension du dev 3D</p>
+                <p><strong>Apprentissage :</strong> Processus, rigueur, interfaces immersives</p>
+              </div>
+            </div>
+          </div>
 
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+          <!-- Projet 3 -->
+          <div class="project-slide">
+            <div class="slide-content">
+              <!--<img src="img/projet3.png" alt="Immersion DSI">-->
+              <div class="text-content">
+                <h2>💻 Immersion DSI – Crédit Agricole</h2>
+                <p><strong>Contexte :</strong> Équipe de développement d’applications web</p>
+                <p><strong>Rôle :</strong> Observation, atelier IA, bonnes pratiques, rôle de chaque profil</p>
+              </div>
+            </div>
+          </div>
 
-    <label for="message">Message<span aria-hidden="true">*</span></label>
-    <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Write your message here"></textarea>
+          <!-- Projet 4 -->
+          <div class="project-slide">
+            <div class="slide-content">
+              <!--<img src="img/projet4.png" alt="Portfolio personnel">-->
+              <div class="text-content">
+                <h2>🌐 Portfolio personnel</h2>
+                <p><strong>Objectif :</strong> Création d'un site internet à partir de zéro</p>
+                <p><strong>Outils :</strong> VS Code, GitHub</p>
+                <p><strong>Techniques :</strong> CSS scroll-snap, navigation fixe, responsive design</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- Boutons de navigation -->
+       <!--<div class="slider-nav">
+          <button id="prev-btn" aria-label="Précédent">←</button>
+          <button id="next-btn" class="nav-btn" aria-label="Suivant">→</button> 
+        </div> --> 
 
-    <button type="submit">Send</button>
-  </form>
-</section>
+      </div> 
+    </section>
 
-<section id="projets">
-  <h2>Mes projets</h2>
-  <p>Les projets seront bientôt disponibles sur GitHub.</p>
-</section>
+  
+    <section class="contact" id="contact">
+      <h2>Contactez-moi</h2>
+      <form action="mailto:ludmilla.pajolec@gmail.com" method="POST" target="_blank" enctype="text/plain" novalidate>
+        <label for="name">Nom<span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required aria-required="true" placeholder="Votre nom complet">
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({offset:0});
-  </script>
-  <script src="script.js"></script>
-</body>     
+        <label for="email">Email<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required aria-required="true" placeholder="Votre adresse mail">
+
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message">
+
+        <label for="message">Message<span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Ecrivez votre message ici"></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+
+    <script src="script.js"></script>
+  </body>     
 </html>
+
